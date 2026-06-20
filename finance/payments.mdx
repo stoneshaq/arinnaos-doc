@@ -1,0 +1,23 @@
+---
+title: "Payments"
+description: "Customer payment records and allocations."
+---
+
+# Payments
+
+Payments are separate receipt records.
+
+A payment can be allocated to one or more invoices.
+
+An invoice can receive multiple payments.
+
+## Allocation rules
+
+Allocations cannot exceed:
+
+- Remaining unallocated payment amount
+- Current invoice balance due
+
+Only completed payments can be allocated.
+
+Cross-currency allocation is intentionally rejected.

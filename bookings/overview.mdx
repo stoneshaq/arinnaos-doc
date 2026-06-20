@@ -1,6 +1,6 @@
 ---
 title: "Bookings"
-description: "Convert accepted quotes into commercial bookings."
+description: "Commercial contracts created from accepted quotes."
 ---
 
 # Bookings
@@ -9,22 +9,16 @@ Bookings are commercial contracts.
 
 A booking is created explicitly from an accepted quote.
 
-Quote acceptance does not automatically create a booking.
+Quote acceptance alone does not create a booking.
 
-## Booking conversion
+## Conversion requirements
 
-Booking conversion copies accepted quote, version, scenario, and line snapshots.
+A quote can be converted only when:
 
-This preserves the commercial boundary between quote and booking.
+- The quote status is accepted
+- Accepted quote version exists
+- Accepted quote scenario exists
 
-## Booking passengers
+## Snapshot preservation
 
-Booking passengers are commercial traveller snapshots.
-
-They do not need to link to master passengers, but they may do so when available.
-
-## Booking rooming
-
-Booking rooming is booking-scoped.
-
-Rooming does not create tour passengers and does not mutate master passenger profiles.
+Bookings copy commercial totals, accepted quote lineage, booking lines, and passenger snapshots.

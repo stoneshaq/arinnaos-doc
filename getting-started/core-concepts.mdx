@@ -5,41 +5,41 @@ description: "Understand the main building blocks of ArinnaOS."
 
 # Core Concepts
 
-ArinnaOS is organised around a few core concepts.
+ArinnaOS is built around clear domain boundaries.
 
 ## Organisation
 
-An organisation is a tenant in ArinnaOS. Each travel company, DMC, agency, or operator has its own organisation workspace.
-
-Data is scoped to the organisation.
+An organisation is a tenant workspace. Data belongs to an organisation and is isolated from other organisations.
 
 ## User
 
-Users access ArinnaOS through invitations. Users can belong to one or more organisations depending on permissions and membership.
+Users access ArinnaOS by invitation. A user may belong to one or more organisations if they are invited and assigned membership.
 
 ## Roles and permissions
 
-Access is permission-based. ArinnaOS uses roles to group permissions, but permissions decide what a user can view or manage.
+ArinnaOS uses role-backed permissions. Roles group permissions, but permissions decide access.
+
+There is no simple `users.role` column.
 
 ## CRM
 
-CRM contains advisors, customers, and leads. These records help manage relationships before and after travel is booked.
+CRM stores advisor profiles, customers, and leads.
 
 ## Supplier network
 
-Suppliers are the parent records for hotels, transport providers, guides, restaurants, and other travel service providers.
+Suppliers are the canonical parent records for hotels, transport providers, guides, restaurants, and other supplier-facing profiles.
 
 ## Tour templates
 
-Tour templates are reusable products. They define the structure of a tour, but they do not represent operating dates.
+Tour templates are reusable products. They define itinerary structure but not operating dates.
 
 ## Tour departures
 
-A departure is a scheduled operating instance of a tour template version.
+Departures are scheduled operating instances of specific tour template versions.
 
 ## Passengers
 
-Passengers are master traveller profiles. Tour-specific state such as room, seat, flight, and roommate information belongs to departure participation records.
+Passengers are master traveller profiles. Departure-specific details live in tour passenger records.
 
 ## Quotes
 
@@ -49,10 +49,10 @@ Quotes are commercial proposals. Quote versions and scenarios preserve pricing s
 
 Bookings are commercial contracts created explicitly from accepted quotes.
 
-## Finance
+## Travel finance
 
-Travel finance manages customer invoices, payments, allocations, balances, and reconciliation.
+Travel finance manages customer invoices, payments, allocations, reconciliation, and balances.
 
 ## SaaS billing
 
-SaaS billing manages ArinnaOS subscriptions, plans, entitlements, usage limits, SaaS invoices, and SaaS payments. It is separate from travel finance.
+SaaS billing manages ArinnaOS subscriptions for tenant organisations. It is separate from travel finance.

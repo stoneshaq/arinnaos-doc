@@ -1,26 +1,29 @@
 ---
 title: "Permissions"
-description: "Understand roles, permissions, tenant isolation, and platform access."
+description: "Permission-based access control in ArinnaOS."
 ---
 
 # Permissions
 
 ArinnaOS uses permission-based access control.
 
-Roles group permissions, but permissions are the source of truth.
+Roles group permissions, but permissions decide access.
 
-## Organisation isolation
+## Rules
 
-Most records belong to an organisation.
+- Active organisation membership is required
+- Matching organisation scope is required
+- Platform admin override is controlled by platform permissions
+- No `users.role` column is used
 
-Users must have active membership and the right permission to access organisation-scoped records.
+## Permission examples
 
-## Platform admin override
-
-Platform admins can access platform-level functions according to platform permissions.
-
-## No users.role column
-
-ArinnaOS does not use a simple `users.role` column.
-
-Roles and permissions are managed through the permission system.
+- `crm.customers.view`
+- `suppliers.manage`
+- `tour_templates.publish`
+- `quotes.accept`
+- `bookings.convert`
+- `invoices.issue`
+- `payments.manage`
+- `finance.reconcile`
+- `platform.organisations.manage`

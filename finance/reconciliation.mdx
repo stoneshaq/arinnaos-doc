@@ -1,0 +1,25 @@
+---
+title: "Reconciliation"
+description: "Customer balances and financial audit events."
+---
+
+# Reconciliation
+
+Finance reconciliation recalculates invoice balances, payment state, and customer account balances.
+
+## Customer account balances
+
+Customer balances can track:
+
+- Total invoiced
+- Total paid
+- Total outstanding
+- Credit balance
+
+## Financial audit events
+
+Finance-specific audit events are recorded for reconciliation, overpayments, credit creation, and balance recalculation.
+
+## Important boundary
+
+Reconciliation updates balance state only. It does not mutate invoice totals or original snapshots.

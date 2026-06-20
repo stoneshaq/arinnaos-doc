@@ -17,59 +17,114 @@
             "pages": [
               "introduction",
               "getting-started/core-concepts",
-              "getting-started/invite-only-access"
+              "getting-started/invite-only-access",
+              "getting-started/users-and-roles",
+              "getting-started/organisations"
             ]
           },
           {
             "group": "CRM",
             "pages": [
+              "crm/overview",
               "crm/customers",
-              "crm/leads"
+              "crm/leads",
+              "crm/advisors"
             ]
           },
           {
             "group": "Suppliers",
             "pages": [
-              "suppliers/overview"
+              "suppliers/overview",
+              "suppliers/hotels",
+              "suppliers/transport",
+              "suppliers/guides",
+              "suppliers/restaurants"
+            ]
+          },
+          {
+            "group": "References",
+            "pages": [
+              "references/places",
+              "references/sights-and-activities"
             ]
           },
           {
             "group": "Tours",
             "pages": [
               "tours/templates",
-              "tours/departures"
+              "tours/departures",
+              "tours/operations"
             ]
           },
           {
             "group": "Passengers",
             "pages": [
-              "passengers/overview"
+              "passengers/overview",
+              "passengers/visas",
+              "passengers/tour-passengers"
             ]
           },
           {
             "group": "Quotes & Bookings",
             "pages": [
               "quotes/overview",
-              "bookings/overview"
+              "quotes/quote-versions",
+              "quotes/scenarios-and-lines",
+              "bookings/overview",
+              "bookings/passengers-and-rooming"
             ]
           },
           {
             "group": "Finance",
             "pages": [
-              "finance/overview"
+              "finance/invoices",
+              "finance/payments",
+              "finance/reconciliation"
+            ]
+          },
+          {
+            "group": "Documents & Collaboration",
+            "pages": [
+              "documents-notes-tasks/overview",
+              "notifications/overview"
             ]
           },
           {
             "group": "Platform",
             "pages": [
               "platform/overview",
-              "saas-billing/overview"
+              "platform/support-and-impersonation",
+              "saas-billing/overview",
+              "saas-billing/plans-and-entitlements",
+              "saas-billing/usage-limits",
+              "saas-billing/lifecycle"
             ]
           },
           {
             "group": "Security",
             "pages": [
-              "security/permissions"
+              "security/permissions",
+              "security/audit-logs"
+            ]
+          },
+          {
+            "group": "Roadmap",
+            "pages": [
+              "roadmap/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Architecture",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/system-overview",
+              "architecture/finance-boundaries",
+              "architecture/snapshot-strategy",
+              "architecture/ui-architecture"
             ]
           }
         ]

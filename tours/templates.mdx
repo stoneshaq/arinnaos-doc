@@ -1,45 +1,34 @@
 ---
 title: "Tour Templates"
-description: "Create reusable tour products and versioned itineraries."
+description: "Reusable products and versioned itineraries."
 ---
 
 # Tour Templates
 
 Tour templates are reusable travel products.
 
-They describe the structure of a tour but do not represent operating dates.
+They do not contain operating dates.
 
 ## Versioning
 
-Tour templates support versioning.
+Tour templates support version lineage.
 
-A template version can be published, and future departures can link to a specific version.
+A new version can be created from a published template. The published source remains unchanged, and the new version becomes a draft.
 
-This protects operating history because departures reference a specific template version, not a mutable product record.
+## Days
 
-## Tour template days
+Template days support:
 
-Tour template days may include:
-
-- Day title
+- Day number
+- Title
 - Day type
-- Meal flags
+- Breakfast, lunch, dinner flags
 - Start, end, and overnight places
-- Day items
-- Accommodation planning
 
 ## Day items
 
-Day items can represent:
+Day items can represent activities, transfers, meals, accommodation, sights, free time, flights, ferries, trains, notes, or custom items.
 
-- Activity
-- Transfer
-- Meal
-- Accommodation
-- Sight
-- Free time
-- Flight
-- Ferry
-- Train
-- Note
-- Custom item
+## Accommodation planning
+
+Structured accommodation planning is stored separately from day items.

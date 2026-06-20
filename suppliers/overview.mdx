@@ -1,19 +1,17 @@
 ---
 title: "Supplier Network"
-description: "Manage hotels, transport, guides, restaurants, and travel service providers."
+description: "Manage hotels, transport, guides, restaurants, and rates."
 ---
 
 # Supplier Network
 
-Suppliers are the canonical parent records for supplier-facing entities in ArinnaOS.
+Suppliers are the canonical parent aggregate for supplier-facing entities.
 
-A supplier can represent a hotel, transport provider, guide, restaurant, activity provider, or mixed supplier.
+A supplier can be a hotel, transport provider, guide, restaurant, activity supplier, or mixed supplier.
 
-## Supplier subtypes
+## Supplier-owned profiles
 
-Supplier profiles extend the supplier parent record.
-
-Supported supplier layers include:
+Supplier-owned profiles include:
 
 - Supplier contacts
 - Hotel profiles
@@ -23,8 +21,8 @@ Supported supplier layers include:
 - Guide profiles
 - Restaurant profiles
 
-## Why suppliers are parent records
+## Why supplier ownership matters
 
-Keeping suppliers as the parent aggregate avoids disconnected hotel, guide, restaurant, or transport records.
+This design prevents disconnected hotel, guide, transport, and restaurant records.
 
-This makes supplier relationships cleaner and easier to audit.
+It keeps supplier data easier to audit and extend.

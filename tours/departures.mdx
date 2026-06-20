@@ -1,31 +1,32 @@
 ---
 title: "Tour Departures"
-description: "Operate scheduled departures from published tour templates."
+description: "Scheduled operations from specific template versions."
 ---
 
 # Tour Departures
 
-Tour departures are scheduled operating instances of tour template versions.
+Tour departures are operating instances of specific tour template versions.
 
-A departure links to a specific tour template version and stores a snapshot of the template at creation time.
+## Template version binding
 
-## Departure data
+Departures link to a specific tour template version.
 
-Departures can manage:
+A template snapshot is stored at departure creation and remains stable.
+
+## Departure management
+
+Departures can include:
 
 - Departure number
-- Start and end dates
+- Date range
+- Status
 - Capacity
-- Definite status
+- Definite flag
 - Guide assignments
 - Transport assignments
 - Accommodation records
-- Departure services
+- Service confirmations
 
-## Template snapshots
+## Operational rule
 
-The template snapshot stays stable even if the original tour template changes later.
-
-## Operational assignments
-
-ArinnaOS validates guide, transport, accommodation, and service links so they remain within the same organisation and compatible with the referenced template version.
+Departure records are operational. They do not directly create passengers, bookings, invoices, or payments.
