@@ -1,29 +1,26 @@
 ---
 title: "Permissions"
-description: "Permission-based access control in ArinnaOS."
+description: "Security documentation explains permissions, roles, memberships, impersonation, and audit logs."
 ---
 
 # Permissions
 
-ArinnaOS uses permission-based access control.
+Security documentation explains permissions, roles, memberships, impersonation, and audit logs.
 
-Roles group permissions, but permissions decide access.
+## What this page covers
 
-## Rules
+This page introduces the main concepts, boundaries, and workflows for permissions.
 
-- Active organisation membership is required
-- Matching organisation scope is required
-- Platform admin override is controlled by platform permissions
-- No `users.role` column is used
+## Key ideas
 
-## Permission examples
+- Records are organisation-scoped where applicable.
+- Permissions control access.
+- Activity history records important changes.
+- Documents, notes, and tasks are available where supported.
+- Commercial and financial snapshots remain stable where required.
 
-- `crm.customers.view`
-- `suppliers.manage`
-- `tour_templates.publish`
-- `quotes.accept`
-- `bookings.convert`
-- `invoices.issue`
-- `payments.manage`
-- `finance.reconcile`
-- `platform.organisations.manage`
+## Related sections
+
+- [Core Concepts](/getting-started/core-concepts)
+- [Permissions Basics](/getting-started/permissions-basics)
+- [Activity History](/getting-started/activity-history)

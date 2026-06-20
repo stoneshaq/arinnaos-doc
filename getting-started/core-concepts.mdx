@@ -1,57 +1,56 @@
 ---
-title: Core Concepts
-description: Understand the fundamental concepts used throughout ArinnaOS.
+title: "Core Concepts"
+description: "Understand the key concepts used throughout ArinnaOS."
 ---
 
 # Core Concepts
 
-Before using ArinnaOS, it is important to understand a few key concepts.
-
 ## Organisation
 
-An organisation is a tenant within ArinnaOS.
+An organisation is a tenant workspace in ArinnaOS.
 
-All records belong to an organisation.
-
-Examples:
-
-- Travel agency
-- Tour operator
-- DMC
+Each travel business operates inside its own organisation.
 
 ## User
 
-Users access ArinnaOS through invitations.
-
-Users belong to one or more organisations.
+Users access ArinnaOS by invitation.
 
 ## Membership
 
-Membership defines a user's relationship to an organisation.
+A membership connects a user to an organisation.
 
-Membership controls access rights.
+## Roles and permissions
 
-## Roles
+Roles group permissions. Permissions control what users can do.
 
-Roles define what a user can do.
+## Supplier
 
-Examples:
+A supplier is the parent record for hotels, transport providers, guides, restaurants, and other service providers.
 
-- Organisation Admin
-- Sales
-- Operations
-- Finance
+## Tour template
 
-## Permissions
+A reusable product structure without operating dates.
 
-Permissions control specific actions.
+## Departure
 
-Examples:
+A scheduled operation linked to a specific tour template version.
 
-- Create customers
-- Approve quotes
-- Manage invoices
+## Passenger
 
-## Activity History
+A reusable traveller profile.
 
-Important actions are recorded in activity logs for auditability.
+## Tour passenger
+
+A passenger participating in a specific departure.
+
+## Quote
+
+A commercial proposal.
+
+## Booking
+
+A commercial contract created explicitly from an accepted quote.
+
+## Invoice and payment
+
+Invoices request payment. Payments record money received.

@@ -15,11 +15,16 @@
           {
             "group": "Getting Started",
             "pages": [
-              "introduction",
+              "getting-started/introduction",
               "getting-started/core-concepts",
               "getting-started/invite-only-access",
               "getting-started/users-and-roles",
-              "getting-started/organisations"
+              "getting-started/organisations",
+              "getting-started/navigation",
+              "getting-started/permissions-basics",
+              "getting-started/documents-notes-tasks",
+              "getting-started/activity-history",
+              "getting-started/glossary"
             ]
           },
           {
@@ -28,103 +33,128 @@
               "crm/overview",
               "crm/customers",
               "crm/leads",
-              "crm/advisors"
+              "crm/advisors",
+              "crm/notes",
+              "crm/tasks",
+              "crm/documents"
             ]
           },
           {
             "group": "Suppliers",
             "pages": [
               "suppliers/overview",
+              "suppliers/supplier-network",
               "suppliers/hotels",
+              "suppliers/restaurants",
               "suppliers/transport",
               "suppliers/guides",
-              "suppliers/restaurants"
-            ]
-          },
-          {
-            "group": "References",
-            "pages": [
-              "references/places",
-              "references/sights-and-activities"
+              "suppliers/contacts",
+              "suppliers/rates"
             ]
           },
           {
             "group": "Tours",
             "pages": [
-              "tours/templates",
+              "tours/overview",
+              "tours/tour-templates",
+              "tours/template-versions",
               "tours/departures",
-              "tours/operations"
+              "tours/itineraries",
+              "tours/places",
+              "tours/sights",
+              "tours/activities"
             ]
           },
           {
             "group": "Passengers",
             "pages": [
               "passengers/overview",
-              "passengers/visas",
-              "passengers/tour-passengers"
+              "passengers/passenger-profiles",
+              "passengers/tour-passengers",
+              "passengers/rooming",
+              "passengers/flights",
+              "passengers/documents",
+              "passengers/insurance",
+              "passengers/visas"
             ]
           },
           {
-            "group": "Quotes & Bookings",
+            "group": "Quotes",
             "pages": [
               "quotes/overview",
+              "quotes/quote-requests",
+              "quotes/quotes",
               "quotes/quote-versions",
-              "quotes/scenarios-and-lines",
+              "quotes/scenarios",
+              "quotes/quote-lines",
+              "quotes/acceptance"
+            ]
+          },
+          {
+            "group": "Bookings",
+            "pages": [
               "bookings/overview",
-              "bookings/passengers-and-rooming"
+              "bookings/booking-conversion",
+              "bookings/booking-passengers",
+              "bookings/rooming",
+              "bookings/financial-snapshots"
             ]
           },
           {
             "group": "Finance",
             "pages": [
+              "finance/overview",
               "finance/invoices",
+              "finance/invoice-lines",
               "finance/payments",
-              "finance/reconciliation"
+              "finance/allocations",
+              "finance/reconciliation",
+              "finance/credits"
             ]
           },
           {
-            "group": "Documents & Collaboration",
+            "group": "SaaS Billing",
             "pages": [
-              "documents-notes-tasks/overview",
-              "notifications/overview"
+              "saas-billing/overview",
+              "saas-billing/plans",
+              "saas-billing/entitlements",
+              "saas-billing/usage-limits",
+              "saas-billing/subscriptions",
+              "saas-billing/saas-invoices",
+              "saas-billing/saas-payments",
+              "saas-billing/lifecycle-states"
             ]
           },
           {
             "group": "Platform",
             "pages": [
               "platform/overview",
-              "platform/support-and-impersonation",
-              "saas-billing/overview",
-              "saas-billing/plans-and-entitlements",
-              "saas-billing/usage-limits",
-              "saas-billing/lifecycle"
+              "platform/organisations",
+              "platform/subscriptions",
+              "platform/usage",
+              "platform/settings",
+              "platform/support",
+              "platform/impersonation"
             ]
           },
           {
             "group": "Security",
             "pages": [
+              "security/overview",
               "security/permissions",
+              "security/roles",
+              "security/memberships",
+              "security/impersonation",
               "security/audit-logs"
             ]
           },
           {
-            "group": "Roadmap",
+            "group": "Reference",
             "pages": [
-              "roadmap/overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Architecture",
-        "groups": [
-          {
-            "group": "Architecture",
-            "pages": [
-              "architecture/system-overview",
-              "architecture/finance-boundaries",
-              "architecture/snapshot-strategy",
-              "architecture/ui-architecture"
+              "reference/definitions",
+              "reference/statuses",
+              "reference/lifecycle-states",
+              "reference/glossary"
             ]
           }
         ]
