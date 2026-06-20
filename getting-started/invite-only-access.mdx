@@ -1,49 +1,33 @@
 ---
-title: "Invite-only Access"
-description: "How organisations and users access ArinnaOS."
+title: Invite-only Access
+description: Understand how users join organisations.
 ---
 
 # Invite-only Access
 
-ArinnaOS does not allow public user registration.
+ArinnaOS does not support public registration.
 
-All access begins with an invitation.
+Users can only access an organisation through invitations.
 
-## Organisation onboarding
+## Why Invite-only?
 
-A platform admin creates an organisation and may invite the first organisation admin.
+Invite-only access provides:
 
-## User invitations
+- Better security
+- Better tenant isolation
+- Controlled onboarding
+- Reduced spam accounts
 
-Organisation admins can invite users to their organisation.
+## Invitation Workflow
 
-An invitation includes:
+1. Organisation admin sends invitation.
+2. User receives invitation.
+3. User accepts invitation.
+4. Membership is created.
+5. Roles are assigned.
 
-- Organisation
-- Email address
-- Invited roles
-- Token
-- Expiry date
-- Status
+## Email Matching
 
-## Invitation acceptance
+Invitations are tied to an email address.
 
-When an invitation is accepted, ArinnaOS:
-
-1. Validates the token
-2. Checks the invitation email address
-3. Creates or links the user
-4. Marks the email as verified
-5. Creates or reactivates membership
-6. Assigns validated roles
-
-## Invitation statuses
-
-Invitations can be:
-
-- Pending
-- Accepted
-- Expired
-- Revoked
-
-Expired and revoked invitations cannot be accepted.
+The invited email must match during acceptance.

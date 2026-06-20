@@ -1,37 +1,34 @@
 ---
-title: "Organisations"
-description: "Tenant workspaces and organisation-level isolation."
+title: Organisations
+description: Tenant structure in ArinnaOS.
 ---
 
 # Organisations
 
-An organisation represents a tenant workspace in ArinnaOS.
+Organisations are the primary boundary in ArinnaOS.
 
-Each travel company has its own organisation scope.
+## Data Ownership
 
-## Organisation ownership
+All records belong to an organisation.
 
-Most operational records belong to an organisation, including:
+Examples:
 
 - Customers
-- Leads
 - Suppliers
 - Tours
-- Departures
-- Passengers
 - Quotes
 - Bookings
-- Invoices
-- Payments
+- Finance records
 
 ## Isolation
 
-Organisation data is isolated by design.
+Users cannot access records belonging to another organisation unless explicitly authorised.
 
-Cross-organisation access is denied unless a platform-level admin action explicitly allows it.
+## Organisation Lifecycle
 
-## Suspension and archive
+Organisations may be:
 
-Platform admins can suspend or archive organisations.
-
-Suspension and archive do not delete tenant travel data.
+- Trial
+- Active
+- Suspended
+- Archived

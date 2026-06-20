@@ -1,58 +1,57 @@
 ---
-title: "Core Concepts"
-description: "Understand the main building blocks of ArinnaOS."
+title: Core Concepts
+description: Understand the fundamental concepts used throughout ArinnaOS.
 ---
 
 # Core Concepts
 
-ArinnaOS is built around clear domain boundaries.
+Before using ArinnaOS, it is important to understand a few key concepts.
 
 ## Organisation
 
-An organisation is a tenant workspace. Data belongs to an organisation and is isolated from other organisations.
+An organisation is a tenant within ArinnaOS.
+
+All records belong to an organisation.
+
+Examples:
+
+- Travel agency
+- Tour operator
+- DMC
 
 ## User
 
-Users access ArinnaOS by invitation. A user may belong to one or more organisations if they are invited and assigned membership.
+Users access ArinnaOS through invitations.
 
-## Roles and permissions
+Users belong to one or more organisations.
 
-ArinnaOS uses role-backed permissions. Roles group permissions, but permissions decide access.
+## Membership
 
-There is no simple `users.role` column.
+Membership defines a user's relationship to an organisation.
 
-## CRM
+Membership controls access rights.
 
-CRM stores advisor profiles, customers, and leads.
+## Roles
 
-## Supplier network
+Roles define what a user can do.
 
-Suppliers are the canonical parent records for hotels, transport providers, guides, restaurants, and other supplier-facing profiles.
+Examples:
 
-## Tour templates
+- Organisation Admin
+- Sales
+- Operations
+- Finance
 
-Tour templates are reusable products. They define itinerary structure but not operating dates.
+## Permissions
 
-## Tour departures
+Permissions control specific actions.
 
-Departures are scheduled operating instances of specific tour template versions.
+Examples:
 
-## Passengers
+- Create customers
+- Approve quotes
+- Manage invoices
 
-Passengers are master traveller profiles. Departure-specific details live in tour passenger records.
+## Activity History
 
-## Quotes
-
-Quotes are commercial proposals. Quote versions and scenarios preserve pricing snapshots.
-
-## Bookings
-
-Bookings are commercial contracts created explicitly from accepted quotes.
-
-## Travel finance
-
-Travel finance manages customer invoices, payments, allocations, reconciliation, and balances.
-
-## SaaS billing
-
-SaaS billing manages ArinnaOS subscriptions for tenant organisations. It is separate from travel finance.
+Important actions are recorded in activity logs for auditability.
