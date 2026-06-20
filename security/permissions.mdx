@@ -1,0 +1,26 @@
+---
+title: "Permissions"
+description: "Understand roles, permissions, tenant isolation, and platform access."
+---
+
+# Permissions
+
+ArinnaOS uses permission-based access control.
+
+Roles group permissions, but permissions are the source of truth.
+
+## Organisation isolation
+
+Most records belong to an organisation.
+
+Users must have active membership and the right permission to access organisation-scoped records.
+
+## Platform admin override
+
+Platform admins can access platform-level functions according to platform permissions.
+
+## No users.role column
+
+ArinnaOS does not use a simple `users.role` column.
+
+Roles and permissions are managed through the permission system.

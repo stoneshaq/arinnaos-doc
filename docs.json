@@ -1,0 +1,79 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "ArinnaOS",
+  "colors": {
+    "primary": "#F5C542",
+    "light": "#F5C542",
+    "dark": "#F5C542"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Product Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-started/core-concepts",
+              "getting-started/invite-only-access"
+            ]
+          },
+          {
+            "group": "CRM",
+            "pages": [
+              "crm/customers",
+              "crm/leads"
+            ]
+          },
+          {
+            "group": "Suppliers",
+            "pages": [
+              "suppliers/overview"
+            ]
+          },
+          {
+            "group": "Tours",
+            "pages": [
+              "tours/templates",
+              "tours/departures"
+            ]
+          },
+          {
+            "group": "Passengers",
+            "pages": [
+              "passengers/overview"
+            ]
+          },
+          {
+            "group": "Quotes & Bookings",
+            "pages": [
+              "quotes/overview",
+              "bookings/overview"
+            ]
+          },
+          {
+            "group": "Finance",
+            "pages": [
+              "finance/overview"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/overview",
+              "saas-billing/overview"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/permissions"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

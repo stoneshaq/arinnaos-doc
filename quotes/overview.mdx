@@ -1,0 +1,34 @@
+---
+title: "Quotes"
+description: "Create commercial travel proposals with frozen pricing snapshots."
+---
+
+# Quotes
+
+Quotes are commercial containers for customer opportunities.
+
+ArinnaOS separates quote requests, quotes, quote versions, scenarios, and lines.
+
+## Quote request
+
+A quote request captures the enquiry or brief before formal pricing.
+
+## Quote
+
+The quote is the mutable workflow head.
+
+It tracks the customer, advisor, status, sent state, acceptance state, and commercial messaging.
+
+## Quote version
+
+A quote version is an immutable priced snapshot.
+
+When pricing changes, a new version should be created instead of mutating the old one.
+
+## Quote scenario
+
+Scenarios allow alternatives inside a version, such as good, better, best options.
+
+## Quote lines
+
+Quote lines store frozen pricing data, including source cost, FX, markup, discount, commission, tax, sell price, and margin.

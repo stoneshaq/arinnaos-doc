@@ -1,0 +1,34 @@
+---
+title: "Travel Finance"
+description: "Manage customer invoices, payments, allocations, and reconciliation."
+---
+
+# Travel Finance
+
+Travel finance in ArinnaOS manages customer-facing invoices and payments.
+
+It is separate from SaaS billing.
+
+## Invoices
+
+Invoices can be created explicitly from bookings.
+
+Invoice lines copy frozen booking line snapshots.
+
+Invoice totals and snapshots remain stable after creation.
+
+## Payments
+
+Payments are receipt records.
+
+Payments can be allocated to invoices.
+
+One payment can allocate across multiple invoices, and one invoice can receive multiple payments.
+
+## Reconciliation
+
+Finance reconciliation updates invoice balance state and customer balances without mutating original invoice totals or snapshots.
+
+## Customer account balances
+
+Customer account balances provide derived finance summaries, including invoiced totals, paid totals, outstanding totals, and credit balances.
