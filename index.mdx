@@ -1,141 +1,72 @@
 ---
-title: "Home"
+title: "ArinnaOS Documentation"
 description: "Product documentation for ArinnaOS, the operating platform for modern travel businesses."
-mode: frame
 ---
 
-<div data-product-guide-index className="flex w-full flex-col gap-8 max-w-6xl mx-auto px-4 md:px-8 lg:px-12 py-10 lg:gap-14 lg:py-16">
-  <div className="flex max-w-[720px] flex-col gap-3 self-center text-center">
-    <div className="mx-auto mb-2 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-      ArinnaOS Product Guide
-    </div>
+# ArinnaOS Documentation
 
-    <h1 className="text-[34px] font-semibold leading-10 tracking-tight text-gray-900 dark:text-gray-50">
-      Run your travel business from one operating platform.
-    </h1>
+ArinnaOS is the operating platform for modern travel businesses.
 
-    <p className="text-balance text-base leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
-      Learn how ArinnaOS helps DMCs, tour operators, travel agencies, and advisors manage CRM, suppliers, tours, passengers, quotes, bookings, finance, SaaS billing, and platform administration.
-    </p>
-  </div>
+Use these guides to understand how ArinnaOS manages CRM, suppliers, tours, passengers, quotes, bookings, finance, SaaS billing, and platform administration.
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    <a href="/getting-started/core-concepts" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="compass" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Core concepts</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Understand organisations, users, permissions, tours, quotes, bookings, and finance.</span>
-      </div>
-    </a>
+<CardGroup cols={2}>
+  <Card title="Core Concepts" icon="compass" href="/getting-started/core-concepts">
+    Understand organisations, users, permissions, tours, quotes, bookings, and finance.
+  </Card>
 
-    <a href="/getting-started/invite-only-access" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="mail-check" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Invite-only access</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Learn how organisations, users, invitations, roles, and permissions work.</span>
-      </div>
-    </a>
+  <Card title="Invite-only Access" icon="mail-check" href="/getting-started/invite-only-access">
+    Learn how organisations, users, invitations, roles, and permissions work.
+  </Card>
 
-    <a href="/crm/overview" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="users-group" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">CRM</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Manage leads, advisors, customers, relationships, notes, documents, and tasks.</span>
-      </div>
-    </a>
+  <Card title="CRM" icon="users" href="/crm/overview">
+    Manage leads, advisors, customers, relationships, notes, documents, and tasks.
+  </Card>
 
-    <a href="/suppliers/overview" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="building-store" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Supplier network</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Work with hotels, transport providers, guides, restaurants, contacts, and rates.</span>
-      </div>
-    </a>
+  <Card title="Supplier Network" icon="building-store" href="/suppliers/overview">
+    Work with hotels, transport providers, guides, restaurants, contacts, and rates.
+  </Card>
 
-    <a href="/tours/templates" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="route" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Tours & departures</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Create reusable tour templates, publish versions, and manage scheduled departures.</span>
-      </div>
-    </a>
+  <Card title="Tours & Departures" icon="route" href="/tours/templates">
+    Create reusable tour templates, publish versions, and manage scheduled departures.
+  </Card>
 
-    <a href="/passengers/overview" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="passport" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Passengers</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Manage master traveller profiles, visas, documents, and departure participation.</span>
-      </div>
-    </a>
+  <Card title="Passengers" icon="passport" href="/passengers/overview">
+    Manage master traveller profiles, visas, documents, and departure participation.
+  </Card>
 
-    <a href="/quotes/overview" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="file-dollar" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Quotes</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Build quote requests, versions, scenarios, line pricing, and accepted quote boundaries.</span>
-      </div>
-    </a>
+  <Card title="Quotes" icon="file-dollar" href="/quotes/overview">
+    Build quote requests, versions, scenarios, line pricing, and accepted quote boundaries.
+  </Card>
 
-    <a href="/bookings/overview" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="briefcase" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Bookings</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Convert accepted quotes into commercial bookings, passengers, lines, and rooming.</span>
-      </div>
-    </a>
+  <Card title="Bookings" icon="briefcase" href="/bookings/overview">
+    Convert accepted quotes into commercial bookings, passengers, lines, and rooming.
+  </Card>
 
-    <a href="/finance/invoices" className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-5 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-      <Icon icon="receipt" color="rgb(var(--primary))" size={20} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Finance</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Manage customer invoices, payments, allocations, reconciliation, and balances.</span>
-      </div>
-    </a>
-  </div>
+  <Card title="Finance" icon="receipt" href="/finance/invoices">
+    Manage customer invoices, payments, allocations, reconciliation, and balances.
+  </Card>
 
-  <hr className="border-0 border-t border-border" />
+  <Card title="Platform Administration" icon="settings" href="/platform/overview">
+    Manage organisations, SaaS subscriptions, settings, support, and platform workflows.
+  </Card>
+</CardGroup>
 
-  <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-    <div className="flex flex-col gap-4">
-      <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Common workflows</h2>
+## Common workflows
 
-      <div className="grid grid-cols-1 gap-4">
-        <a href="/quotes/quote-versions" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Understand quote versions</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Learn why quote versions are immutable priced snapshots.</span>
-        </a>
+<CardGroup cols={2}>
+  <Card title="Understand quote versions" icon="versions" href="/quotes/quote-versions">
+    Learn why quote versions are immutable priced snapshots.
+  </Card>
 
-        <a href="/bookings/overview" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Convert a quote into a booking</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">See how accepted quote snapshots become commercial bookings.</span>
-        </a>
+  <Card title="Convert a quote into a booking" icon="arrow-right-circle" href="/bookings/overview">
+    See how accepted quote snapshots become commercial bookings.
+  </Card>
 
-        <a href="/finance/payments" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Allocate payments</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Understand how payments reduce invoice balances without changing invoice totals.</span>
-        </a>
-      </div>
-    </div>
+  <Card title="Allocate payments" icon="credit-card" href="/finance/payments">
+    Understand how payments reduce invoice balances without changing invoice totals.
+  </Card>
 
-    <div className="flex flex-col gap-4">
-      <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Administration</h2>
-
-      <div className="grid grid-cols-1 gap-4">
-        <a href="/platform/overview" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Platform administration</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Manage organisations, subscriptions, platform settings, and support workflows.</span>
-        </a>
-
-        <a href="/saas-billing/overview" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">SaaS billing</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Learn how plans, entitlements, usage limits, SaaS invoices, and SaaS payments work.</span>
-        </a>
-
-        <a href="/security/permissions" className="rounded-2xl flex flex-col gap-2 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Roles and permissions</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">Understand organisation access, platform access, and permission-based control.</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+  <Card title="Roles and permissions" icon="shield-check" href="/security/permissions">
+    Understand organisation access, platform access, and permission-based control.
+  </Card>
+</CardGroup>
